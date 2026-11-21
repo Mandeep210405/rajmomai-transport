@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background: #101010;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  body {
+    @apply bg-ink font-sans text-offwhite antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+  ::selection {
+    background: #d4af37;
+    color: #101010;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .section {
+    @apply relative py-24 sm:py-32;
+  }
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ink disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-ink hover:-translate-y-0.5 hover:bg-[#e6c457] hover:shadow-gold;
+  }
+  .btn-ghost {
+    @apply btn border border-white/25 text-offwhite hover:-translate-y-0.5 hover:border-gold hover:text-gold;
+  }
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-md;
+  }
+  .gold-text {
+    @apply bg-gradient-to-r from-gold via-[#f0d77a] to-copper bg-clip-text text-transparent;
+  }
+  .field {
+    @apply w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-sm text-offwhite placeholder:text-muted/70 transition focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold;
+  }
+  .field[aria-invalid="true"] {
+    @apply border-red-400/70;
+  }
+}

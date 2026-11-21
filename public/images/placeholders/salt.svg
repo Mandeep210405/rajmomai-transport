@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0b0b"/><stop offset="1" stop-color="#1c1c1c"/></linearGradient>
+<radialGradient id="glow" cx="40%" cy="38%" r="55%"><stop offset="0" stop-color="#cfd8dc" stop-opacity="0.3"/><stop offset="1" stop-color="#cfd8dc" stop-opacity="0"/></radialGradient>
+<radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="0.5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.65"/></radialGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#glow)"/>
+<polygon points="55.392618312757236,850 276.80324074074076,622.4723936899863 498.5785751028807,850" fill="#cfd8dc" fill-opacity="0.18203497942386831" stroke="#cfd8dc" stroke-opacity="0.35"/><polygon points="453.764317558299,850 631.6682098765432,425.5943930041152 818.1132544581618,850" fill="#cfd8dc" fill-opacity="0.21811822702331962" stroke="#cfd8dc" stroke-opacity="0.35"/><polygon points="851.0274777091909,850 1059.820216049383,378.8449931412894 1232.7688185871057,850" fill="#cfd8dc" fill-opacity="0.25027657750342935" stroke="#cfd8dc" stroke-opacity="0.35"/><polygon points="1138.2623456790122,850 1381.8148148148148,529.5698731138546 1576.6502057613168,850" fill="#cfd8dc" fill-opacity="0.21671990740740743" stroke="#cfd8dc" stroke-opacity="0.35"/><rect x="0" y="850" width="1600" height="150" fill="#0a0a0a" fill-opacity="0.7"/>
+<rect width="1600" height="1000" fill="url(#vig)"/>
+</svg>
